@@ -1,0 +1,52 @@
+.item-padding {
+  padding-top: 10px;
+}
+.App .cart {
+  background: red;
+  height: 50px;
+}
+.App .main-title {
+  text-align: center;
+}
+.App .col-md-4 {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.App .col-md-4 .item {
+  background-color: #FAFAFA;
+  padding: 40px;
+}
+.App .col-md-4 .item .modal {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App .col-md-4 .item .modal .modal-container {
+  width: 500px;
+  min-height: 500px;
+  background: black;
+}
+.App .col-md-4 .item .item-title {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.App .col-md-4 .item .item-description {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.App .col-md-4 .item .item-price {
+  padding-top: 10px;
+  font-size: 1.3rem;
+  color: #13abe1;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+.App .col-md-4 .item .item-button {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
