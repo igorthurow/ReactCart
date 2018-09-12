@@ -77,14 +77,10 @@ const items = [
 ]
 
 class App extends Component {
-    price = 0;
-    constructor() {
-        super()
-        this.state = {
-            modal: '',
-            cartItems: {},
-            price: 0
-        }
+    state = {
+        modal: '',
+        cartItems: {},
+        price: 0
     }
     render() {
         return (
@@ -102,7 +98,6 @@ class App extends Component {
                                         .price
                                         .toFixed(2)}
                                     Nome: {this.state.cartItems[item].name}
-                                    {console.log(this.state.price)}
                                 </div>
                             ))}</div>
                     <div className="container">
