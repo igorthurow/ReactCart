@@ -85,21 +85,21 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <div className="container-fluid top">
-                    <div className="cart">{Object
-                            .keys(this.state.cartItems)
-                            .length > 0 && Object
-                            .keys(this.state.cartItems)
-                            .map((item) => (
-                                <div className="cart-items">
-                                    Preço: {this
-                                        .state
-                                        .cartItems[item]
-                                        .price
-                                        .toFixed(2)}
-                                    Nome: {this.state.cartItems[item].name}
-                                </div>
-                            ))}</div>
+                <div className="container-fluid">{
+                    Object.keys(this.state.cartItems).length > 0 && 
+                    <div className="cart"> {
+                        Object.keys(this.state.cartItems).map((item) => (
+                            <div className="cart-items">
+                                Preço: {this
+                                    .state
+                                    .cartItems[item]
+                                    .price
+                                    .toFixed(2)}
+                                Nome: {this.state.cartItems[item].name}
+                            </div>
+                                ))}
+                    </div>
+                    }
                     <div className="container">
                         <h2 className="main-title">Confira nossos produtos</h2>
                         <div className="row">
